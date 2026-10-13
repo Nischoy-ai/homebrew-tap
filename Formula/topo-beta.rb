@@ -5,23 +5,23 @@ class TopoBeta < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.6-beta.1/topo_0.4.6-beta.1_darwin_amd64.tar.gz"
-      sha256 "b91ef304106b5edfd81dc4371a656f94a2142e705fb56103260e1d5ce483462c"
+      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.7-beta.1/topo_0.4.7-beta.1_darwin_amd64.tar.gz"
+      sha256 "aa59ad75839bd32c3b20273d7b5ff64bdd48ef87e58aa8a8204845cdcc166836"
     end
     on_arm do
-      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.6-beta.1/topo_0.4.6-beta.1_darwin_arm64.tar.gz"
-      sha256 "8170e10747ac06d4e11b53be1af45305579b4c7399e92c1e038b1ce7eb6360e2"
+      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.7-beta.1/topo_0.4.7-beta.1_darwin_arm64.tar.gz"
+      sha256 "f1e21fec1a0ae4c6b1df8e60c7011c8ab2b9a2b5982fb03559744a8bf0796509"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.6-beta.1/topo_0.4.6-beta.1_linux_amd64.tar.gz"
-      sha256 "4cf477608c17e13489d4b4789f64e801452ea9baf44c8ce979d78bb4b0f00086"
+      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.7-beta.1/topo_0.4.7-beta.1_linux_amd64.tar.gz"
+      sha256 "1f701a97b42f7b7d6fafac65043b7c89e1fcad8671bc81aba4fcad18aa39e1d4"
     end
     on_arm do
-      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.6-beta.1/topo_0.4.6-beta.1_linux_arm64.tar.gz"
-      sha256 "5657ed28624ec5305285116f12e313a90a5f8de9b586f3657cb1d274622dc10d"
+      url "https://github.com/Nischoy-ai/topo/releases/download/v0.4.7-beta.1/topo_0.4.7-beta.1_linux_arm64.tar.gz"
+      sha256 "4a41bea994d65881fb0831e89321dceaa34e0890f812d9811cd1b8933088c982"
     end
   end
 
@@ -33,7 +33,7 @@ class TopoBeta < Formula
   end
 
   test do
-    assert_equal "v0.4.6-beta.1", shell_output("#{bin}/topo version").strip
+    assert_equal "v0.4.7-beta.1", shell_output("#{bin}/topo version").strip
     observations = shell_output("#{bin}/topo discover local")
     assert_match '"assets":', observations
   end
